@@ -1,17 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/assets/images/vite.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/base/normalize.css" />
-		<link rel="stylesheet" href="css/base/base.css" />
-		<link rel="stylesheet" href="css/styles.css" />
-		<title>Vite App</title>
-	</head>
-	<body>
-		<h1>WEB WITH VITE</h1>
-		<!-- <img src="./assets/images/cute-cat.webp" alt="" /> -->
-		<script type="module" src="./js/index.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- PON UN FAVICON!!! -->
+    <!-- <link rel="icon" type="image/svg+xml" href="" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CAMBIA EL TITLE!!! -->
+    <title>Dogs</title>
+	<link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="selects">
+            <div class="content-select">
+                <select id="breeds">
+                    <option>Seleccione una raza</option>
+                </select>
+                <i></i>
+            </div>
+
+            <div id="breeds-container" class="content-select">
+                
+            </div>
+        
+            <button id="button" class="button">Go</button>
+        </div>
+        <div id="dogImage-container" class="dogImage-container">
+			<img id="dogImage" alt="">
+		</div>
+    </div>
+    
+    <script type="module" src="./js/index.js"></script>
+  </body>
 </html>

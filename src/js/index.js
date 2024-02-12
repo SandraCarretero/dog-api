@@ -1,3 +1,9 @@
-import { sayHello } from './demo';
+import { getBreeds, getSubBreeds } from "./breeds-functions";
+import { breedSelectElement, buttonElement } from "./dom";
+import { getPhoto } from "./photo-functions";
 
-sayHello();
+
+getBreeds();
+
+breedSelectElement.addEventListener('change', getSubBreeds);
+buttonElement.addEventListener('click', getPhoto);
